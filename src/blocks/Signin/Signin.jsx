@@ -54,7 +54,7 @@ const Signin = () => {
         <div className='max-w-[1230px] h-full w-full flex justify-center items-center flex-row space-x-1 p-4'>
             <div className='lg:w-[40%] sm:w-[100%] md:w-[60%] h-full bg-[transparent] flex lg:justify-center sm:justify-start items-start lg:p-6 sm:p-1 flex-col space-y-6'>
                 <div className='tittle-wrapper font-semibold text-[32px] spacing-1 leading-[26px] text-black'>Signin</div>
-                <div className='description font-medium text-[20px] spacing-1 leading-[19px] text-black'>New User?</div>
+                <div className='description font-medium text-[20px] spacing-1 leading-[19px] text-black'>New User? <span className="text-blue-600">Create a new account</span></div>
                 <div className='input-wrapper flex flex-col justify-start items-start lg:w-[70%] w-full'>
                     <input {...register('useremail')} type="email" className='w-full p-2 border border-black font-semibold text-base text-black bg-[transparent] focus:outline-none focus:border-black' placeholder='Username or email' value={signinData.useremail} onChange={(e) => {setSigninData({...signinData, useremail: e.target.value})}}></input>
                     {errors.useremail && <span className='text-sm text-red-600 font-normal text-left'>{errors.useremail.message}</span>}
